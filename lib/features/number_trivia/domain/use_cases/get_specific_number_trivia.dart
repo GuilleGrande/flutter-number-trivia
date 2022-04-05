@@ -1,9 +1,10 @@
 import 'package:dartz/dartz.dart';
 import 'package:equatable/equatable.dart';
-import 'package:flutter_number_trivia/core/error/failures.dart';
-import 'package:flutter_number_trivia/core/use_cases/use_case.dart';
-import 'package:flutter_number_trivia/features/number_trivia/domain/entities/number_trivia.dart';
-import 'package:flutter_number_trivia/features/number_trivia/domain/repositories/number_trivia_repository.dart';
+
+import '../../../../core/error/failures.dart';
+import '../../../../core/use_cases/use_case.dart';
+import '../entities/number_trivia.dart';
+import '../repositories/number_trivia_repository.dart';
 
 class GetSpecificNumberTrivia implements UseCase<NumberTrivia, Params> {
   final NumberTriviaRepository repository;
